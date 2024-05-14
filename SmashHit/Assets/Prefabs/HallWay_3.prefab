@@ -429,6 +429,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3449580629951259604}
+  - component: {fileID: 4612210765554071471}
+  - component: {fileID: 2854896581397525257}
   m_Layer: 0
   m_Name: HallWay_3
   m_TagString: Untagged
@@ -455,8 +457,43 @@ Transform:
   - {fileID: 4069620356634509905}
   - {fileID: 594194959156435959}
   - {fileID: 3851907087938787354}
+  - {fileID: 2303977687371813618}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4612210765554071471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3853563624036812338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28d8bb9fabd7fd499751bf268076c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ending: {fileID: 2303977687371813618}
+--- !u!65 &2854896581397525257
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3853563624036812338}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 104}
 --- !u!1 &4270720325607600072
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,8 +736,8 @@ Transform:
   m_GameObject: {fileID: 4870781497213844134}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3267, y: -1.0125, z: -0.020000458}
-  m_LocalScale: {x: 0.34628013, y: 1.0537266, z: 1.0537266}
+  m_LocalPosition: {x: -0.3267, y: -1.0125, z: -0.003}
+  m_LocalScale: {x: 0.34628013, y: 1.0537266, z: 0.53383005}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3851907087938787354}
@@ -1015,8 +1052,8 @@ Transform:
   m_GameObject: {fileID: 5256497189193241699}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.326, y: -1.0125, z: -0.020000458}
-  m_LocalScale: {x: 0.34628013, y: 1.0537266, z: 1.0537266}
+  m_LocalPosition: {x: 0.3269, y: -1.0125, z: -0.0030025598}
+  m_LocalScale: {x: 0.34628013, y: 1.0537266, z: 0.53383005}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3851907087938787354}
@@ -1092,6 +1129,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &5947036331103220665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2303977687371813618}
+  m_Layer: 0
+  m_Name: HallWayEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2303977687371813618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947036331103220665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3449580629951259604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6392969213493294527
 GameObject:
   m_ObjectHideFlags: 0
