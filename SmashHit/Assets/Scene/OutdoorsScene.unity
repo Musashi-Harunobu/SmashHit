@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2541.2307, g: 2580.1584, b: 3654.9927, a: 1}
+  m_IndirectSpecularColor: {r: 2539.803, g: 2579.2444, b: 3654.516, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -405,6 +405,8 @@ GameObject:
   - component: {fileID: 1823688471}
   - component: {fileID: 1823688470}
   - component: {fileID: 1823688472}
+  - component: {fileID: 1823688473}
+  - component: {fileID: 1823688474}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -692,6 +694,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraSpeed: 10
+  OnMoveBreak:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1823688473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823688464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966d51cb249556f498a899573835056f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnThrow:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  ballPrefab: {fileID: 8036149608675696397, guid: f153d4a83e5b3994da82475afc3e952f,
+    type: 3}
+  throwForce: 30
+--- !u!114 &1823688474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823688464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfde86fb098d2e429e2723fc0476cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialBallCount: 25
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
